@@ -21,7 +21,6 @@ Provides:	timidity-instruments = %{patch_pkg_version}
 Obsoletes:	timidity-instruments
 Group:		Sound
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This package contains a set of instruments for the timidity midi->wave
