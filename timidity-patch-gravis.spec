@@ -1,6 +1,6 @@
 %define name	timidity-patch-gravis
 %define version	1.0
-%define release %mkrel 24
+%define release %mkrel 25
 
 %define patch_pkg_version 2
 
@@ -43,8 +43,8 @@ install -m644 %{SOURCE4} -D %{buildroot}%{_datadir}/timidity/gravis/pistol.pat
 %post
 %{_sbindir}/update-alternatives --install %{_sysconfdir}/timidity/timidity.cfg timidity.cfg %{_sysconfdir}/timidity/timidity-gravis.cfg 30
 
-%preun
-if [ "$?" = "0" ]; then
+%postun
+if [ "$1" = "0" ]; then
   %{_sbindir}/update-alternatives --remove timidity.cfg %{_sysconfdir}/timidity/timidity-gravis.cfg
 fi
 
