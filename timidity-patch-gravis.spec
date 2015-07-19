@@ -1,6 +1,6 @@
 %define name	timidity-patch-gravis
 %define version	1.0
-%define release 38
+%define release 39
 
 %define patch_pkg_version 2
 
