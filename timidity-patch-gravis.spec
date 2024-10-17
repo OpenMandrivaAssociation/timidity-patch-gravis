@@ -9,7 +9,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 License:	Public Domain
-URL:		http://www.timidity.jp/
+URL:		https://www.timidity.jp/
 # Patches at http://www.cs.umbc.edu/pub/midia/instruments.tar.gz
 Source0:	midia-instruments.tar.bz2
 Source1:	http://www.timidity.jp/dist/cfg/midia.cfg
